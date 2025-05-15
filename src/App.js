@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { AnimatePresence } from 'framer-motion';
 import './App.css';
 import Amethyst from './pages/Amethyst';
-import Auth from './pages/Auth';
 import UnderConstruction from './pages/UnderConstruction';
-import Forum from './pages/Forum';
 import Rules from './pages/Rules';
 
 function AnimatedRoutes() {
@@ -15,8 +13,6 @@ function AnimatedRoutes() {
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Amethyst />} />
-        <Route path="/auth" element={<Auth />} />
-        <Route path="/forum" element={<Forum />} />
         <Route path="/news" element={<UnderConstruction />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
