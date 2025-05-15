@@ -6,7 +6,7 @@ import PageTransition from '../components/PageTransition';
 const Amethyst = () => {
   const serverIP = "rassvetamethyst.ru:25166";
   const [scrollPosition, setScrollPosition] = useState(0);
-  const totalWidth = 1260; // Общая ширина всех изображений (3 изображения * 420px)
+  const totalWidth = 1260;
   const carouselRef = useRef(null);
   const carouselItems = useRef([]);
 
@@ -32,7 +32,7 @@ const Amethyst = () => {
             
             <p className="hero-description">
               Мы - дружная команда, старающаяся делать сервер лучше для вас каждый день, 
-              мы не идеальны, но стремимся к этому. Играй вместе со звездами - создавай собственное сияние
+              мы не идеальны, но стремимся к этому.
             </p>
             
             <div className="server-info">
@@ -76,7 +76,7 @@ const Amethyst = () => {
 
        <section className="features-section"> 
           <div className="feature-block">
-            <h1 className="feature-main-title">Четыре месяца с нами</h1>
+            <h1 className="feature-main-title">Пять месяцев с нами</h1>
             <div className="feature-header">
               <i className="fas fa-heart"></i>
               <span>Мы ценим всех наших игроков</span>
