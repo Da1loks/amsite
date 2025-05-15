@@ -12,14 +12,14 @@ const Rules = () => {
   useEffect(() => {
     document.title = 'Правила - Amethyst';
     
-    // Обработчик изменения размера окна
+  
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
 
     window.addEventListener('resize', handleResize);
     
-    // Добавляем favicon
+    
     const favicons = [
       { rel: 'icon', href: '/amethyst.png', sizes: '32x32' },
       { rel: 'icon', href: '/amethyst-64.png', sizes: '64x64' },
@@ -38,7 +38,7 @@ const Rules = () => {
     });
 
     return () => {
-      // Очистка при размонтировании
+     
       window.removeEventListener('resize', handleResize);
       favicons.forEach(favicon => {
         const link = document.querySelector(`link[rel='${favicon.rel}'][sizes='${favicon.sizes}']`);
