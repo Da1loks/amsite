@@ -1,0 +1,428 @@
+.auth-page {
+  height: 100vh;
+  background: #0A0A0A;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  padding: 20px;
+}
+
+.auth-content {
+  background: rgba(18, 18, 18, 0.9);
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 100px;
+}
+
+/* Удаляем или комментируем этот блок */
+/* .auth-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #7B5AF2, transparent);
+} */
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.auth-tab {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-tab:hover {
+  background: rgba(26, 26, 26, 0.7);
+  color: white;
+}
+
+.auth-tab.active {
+  background: rgba(123, 90, 242, 0.1);
+  border-color: rgba(123, 90, 242, 0.3);
+  color: #7B5AF2;
+}
+
+.auth-title {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #FFFFFF, rgba(123, 90, 242, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.auth-subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-group input {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: rgba(123, 90, 242, 0.5);
+  background: rgba(26, 26, 26, 0.7);
+}
+
+.auth-submit {
+  background: #7B5AF2;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+
+.auth-submit:hover {
+  background: #6B4DE2;
+  transform: translateY(-2px);
+}
+
+.auth-footer {
+  margin-top: 32px;
+}
+
+.auth-separator {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.auth-separator::before,
+.auth-separator::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.auth-separator span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+
+.social-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.social-btn.discord {
+  background: rgba(88, 101, 242, 0.1);
+  border: 1px solid rgba(88, 101, 242, 0.3);
+  color: #5865F2;
+}
+
+.social-btn.telegram {
+  background: rgba(34, 158, 217, 0.1);
+  border: 1px solid rgba(34, 158, 217, 0.3);
+  color: #229ED9;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+}
+
+.social-btn.discord:hover {
+  background: rgba(88, 101, 242, 0.2);
+}
+
+.social-btn.telegram:hover {
+  background: rgba(34, 158, 217, 0.2);
+}
+
+@media (max-width: 480px) {
+  .auth-content {
+    padding: 30px 20px;
+  }
+
+  .auth-title {
+    font-size: 28px;
+  }
+
+  .auth-tabs {
+    flex-direction: column;
+  }
+
+  .social-auth {
+    flex-direction: column;
+  }
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input-container input {
+  width: 100%;
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.password-toggle:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.password-toggle:focus {
+  outline: none;
+}
+
+.password-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Анимация для иконки */
+.password-toggle svg {
+  transition: transform 0.2s ease;
+}
+
+.password-toggle:hover svg {
+  transform: scale(1.1);
+}
+
+.password-toggle:active svg {
+  transform: scale(0.9);
+}
+
+.telegram-login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.telegram-login-container iframe {
+  width: 100% !important;
+  height: 48px !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+}
+
+/* Стилизация кнопки Telegram для соответствия дизайну */
+.social-btn.telegram {
+  background: rgba(34, 158, 217, 0.1);
+  border: 1px solid rgba(34, 158, 217, 0.3);
+  color: #229ED9;
+  padding: 12px;
+  height: 48px;
+}
+
+.social-btn.telegram:hover {
+  background: rgba(34, 158, 217, 0.2);
+  transform: translateY(-2px);
+}
+
+.telegram-auth-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.telegram-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: rgba(34, 158, 217, 0.05);
+  border: 1px solid rgba(34, 158, 217, 0.1);
+  border-radius: 12px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.benefit-item i {
+  color: #229ED9;
+  font-size: 20px;
+  width: 24px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .auth-content {
+    padding: 30px 20px;
+  }
+
+  .auth-title {
+    font-size: 28px;
+  }
+
+  .telegram-benefits {
+    padding: 16px;
+  }
+
+  .benefit-item {
+    font-size: 14px;
+  }
+}
+
+/* Добавляем анимацию для преимуществ */
+.benefit-item {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.benefit-item:nth-child(1) { animation-delay: 0.1s; }
+.benefit-item:nth-child(2) { animation-delay: 0.2s; }
+.benefit-item:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-error {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  color: #ff4444;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.connect-telegram {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.connect-telegram p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 16px;
+}
+
+.telegram-connect-btn {
+  background: rgba(34, 158, 217, 0.1);
+  border: 1px solid rgba(34, 158, 217, 0.3);
+  color: #229ED9;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+
+.telegram-connect-btn:hover {
+  background: rgba(34, 158, 217, 0.2);
+  transform: translateY(-2px);
+} 
