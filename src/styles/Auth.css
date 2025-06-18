@@ -23,17 +23,6 @@
   margin-top: 100px;
 }
 
-/* Удаляем или комментируем этот блок */
-/* .auth-content::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, #7B5AF2, transparent);
-} */
-
 .auth-header {
   text-align: center;
   margin-bottom: 32px;
@@ -273,7 +262,7 @@
   height: 20px;
 }
 
-/* Анимация для иконки */
+
 .password-toggle svg {
   transition: transform 0.2s ease;
 }
@@ -300,7 +289,7 @@
   background: transparent !important;
 }
 
-/* Стилизация кнопки Telegram для соответствия дизайну */
+
 .social-btn.telegram {
   background: rgba(34, 158, 217, 0.1);
   border: 1px solid rgba(34, 158, 217, 0.3);
@@ -362,7 +351,7 @@
   }
 }
 
-/* Добавляем анимацию для преимуществ */
+
 .benefit-item {
   opacity: 0;
   transform: translateY(10px);

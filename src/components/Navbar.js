@@ -10,16 +10,25 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      setIsScrolled(scrollTop > 50);
     };
-
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <>
       <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <button 
+          className="burger-menu-btn"
+          onClick={() => setIsMobileMenuOpen(true)}
+          aria-label="Открыть меню"
+        >
+          <i className="fas fa-bars"></i>
+        </button>
+
         <div className="nav-left">
           <Link to="/" className="brand">Amethyst</Link>
           <div className="nav-links">
@@ -31,17 +40,16 @@ const Navbar = () => {
               <i className="fas fa-gavel"></i>
               Правила
             </Link>
+            <Link to="/events" className={`nav-link ${location.pathname === '/events' ? 'active' : ''}`}>
+              <i className="fas fa-calendar-alt"></i>
+              События
+            </Link>
+            <Link to="/wiki" className={`nav-link ${location.pathname === '/wiki' ? 'active' : ''}`}>
+              <i className="fas fa-book"></i>
+              Вики
+            </Link>
           </div>
         </div>
-
-
-        <button 
-          className="burger-menu-btn"
-          onClick={() => setIsMobileMenuOpen(true)}
-          aria-label="Открыть меню"
-        >
-          <i className="fas fa-bars"></i>
-        </button>
       </nav>
       
       <MobileMenu 

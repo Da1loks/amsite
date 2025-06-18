@@ -171,4 +171,160 @@
   .profile-header h1 {
     font-size: 24px;
   }
+}
+
+
+.profile-main {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 0 0;
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+.profile-content-wrapper {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  gap: 32px;
+}
+
+.profile-left {
+  flex: 2;
+}
+
+.profile-avatar-block {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.profile-avatar-img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  image-rendering: pixelated;
+}
+
+.profile-balance {
+  background: #222;
+  color: #fff;
+  border-radius: 6px;
+  padding: 2px 10px;
+  font-size: 14px;
+}
+
+.profile-copy-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-welcome {
+  color: #aaa;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.profile-confirm-block,
+.profile-access-block {
+  background: #181818;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  border: 1px solid #222;
+}
+
+.profile-confirm-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+.profile-confirm-title.confirmed {
+  color: #4ade80;
+}
+.profile-confirm-title.not-confirmed {
+  color: #facc15;
+}
+
+.profile-confirm-desc {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.profile-confirm-btn {
+  background: #facc15;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-access-title.access {
+  color: #4ade80;
+}
+.profile-access-title.no-access {
+  color: #f87171;
+}
+
+.profile-access-desc {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.profile-access-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-right {
+  flex: 1;
+  min-width: 260px;
+}
+
+.profile-right-card {
+  background: #181818;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #222;
+  margin-bottom: 24px;
+}
+
+.profile-right-title {
+  color: #4ade80;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.profile-right-role,
+.profile-right-desc,
+.profile-right-org {
+  color: #aaa;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.profile-right-org {
+  color: #facc15;
+}
+
+.profile-mojang-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
 } 

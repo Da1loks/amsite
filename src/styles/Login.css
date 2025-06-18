@@ -3,7 +3,6 @@
   background-color: #0f0f0f;
 }
 
-/* Копируем стили хедера из Amethyst.css */
 .amethyst-header {
   display: flex;
   justify-content: space-between;
@@ -70,7 +69,7 @@
   background: #8a5ff0;
 }
 
-/* Стили для формы входа */
+
 .login-container {
   min-height: 100vh;
   display: flex;

@@ -68,3 +68,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Backend (Node.js + Express + PostgreSQL)
+
+1. Перейдите в папку `server`:
+   ```bash
+   cd server
+   ```
+2. Установите зависимости:
+   ```bash
+   npm install
+   ```
+3. Создайте файл `.env` по примеру `.env.example` и укажите параметры подключения к PostgreSQL.
+4. Запустите сервер:
+   ```bash
+   npm run dev
+   ```
+
+### API
+- `POST /auth/register` — регистрация
+- `POST /auth/login` — вход

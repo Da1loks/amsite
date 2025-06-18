@@ -1,0 +1,23 @@
+{
+  "heads": [
+    { "id": 1, "name": "smu_ums", "url": "https://minotar.net/helm/smu_ums/80" },
+    { "id": 2, "name": "Superslime87246", "url": "https://minotar.net/helm/Superslime87246/80" },
+    { "id": 3, "name": "Kekxss", "url": "https://minotar.net/helm/Kekxss/80" },
+    { "id": 4, "name": "Vchugaev", "url": "https://minotar.net/helm/Vchugaev/80" },
+    { "id": 5, "name": "DunDukov", "url": "https://minotar.net/helm/DunDukov/80" },
+    { "id": 6, "name": "wnfu", "url": "https://minotar.net/helm/wnfu/80" },
+    { "id": 7, "name": "KavinSKIN", "url": "https://minotar.net/helm/KavinSKIN/80" },
+    { "id": 8, "name": "ssserega", "url": "https://minotar.net/helm/ssserega/80" },
+    { "id": 9, "name": "Ken_Flish", "url": "https://minotar.net/helm/Ken_Flish/80" },
+    { "id": 10, "name": "pashok_rozhok", "url": "https://minotar.net/helm/pashok_rozhok/80" },
+    { "id": 11, "name": "german", "url": "https://minotar.net/helm/german/80" },
+    { "id": 12, "name": "Klifhangerr", "url": "https://minotar.net/helm/Klifhangerr/80" },
+    { "id": 13, "name": "Zadira_Cat", "url": "https://minotar.net/helm/Zadira_Cat/80" },
+    { "id": 14, "name": "Pavelkoro", "url": "https://minotar.net/helm/Pavelkoro/80" },
+    { "id": 15, "name": "br33zee", "url": "https://minotar.net/helm/br33zee/80" },
+    { "id": 16, "name": "karparovel", "url": "https://minotar.net/helm/karparovel/80" },
+    { "id": 17, "name": "Reotrum", "url": "https://minotar.net/helm/Reotrum/80" },
+    { "id": 18, "name": "C4unkMiner", "url": "https://minotar.net/helm/C4unkMiner/80" },
+    { "id": 19, "name": "da1loks", "url": "https://minotar.net/helm/da1loks/80" }
+  ]
+} 

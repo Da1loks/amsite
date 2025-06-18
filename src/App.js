@@ -16,6 +16,8 @@ function AnimatedRoutes() {
         <Route path="/news" element={<UnderConstruction />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/under-construction" element={<UnderConstruction />} />
+        <Route path="/events" element={<UnderConstruction />} />
+        <Route path="/wiki" element={<UnderConstruction />} />
       </Routes>
     </AnimatePresence>
   );
@@ -30,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app-container">
         <AnimatedRoutes />
       </div>
