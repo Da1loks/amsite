@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/amethystsite/static/css/main.4fe2b21f.css",
+    "main.js": "/amethystsite/static/js/main.70a77470.js",
+    "static/js/488.ff2b84df.chunk.js": "/amethystsite/static/js/488.ff2b84df.chunk.js",
+    "index.html": "/amethystsite/index.html",
+    "main.4fe2b21f.css.map": "/amethystsite/static/css/main.4fe2b21f.css.map",
+    "main.70a77470.js.map": "/amethystsite/static/js/main.70a77470.js.map",
+    "488.ff2b84df.chunk.js.map": "/amethystsite/static/js/488.ff2b84df.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fe2b21f.css",
+    "static/js/main.70a77470.js"
+  ]
+}

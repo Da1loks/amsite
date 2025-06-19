@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap');
+
+.home-page {
+  min-height: 100vh;
+  background: #0d0d11;
+  color: #ffffff;
+  font-family: 'Unbounded', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.content {
+  padding: 160px 32px 32px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.logo {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  justify-content: center;
+}
+
+.logo svg {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-text {
+  font-size: 64px;
+  font-weight: 600;
+  color: #feecbc;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 80px;
+  color: #94A3B8;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.project {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project:not(.disabled):hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.project.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.project-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.project-icon.placeholder {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-info h2 {
+  margin: 0 0 4px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.project-info p {
+  margin: 0;
+  color: #94A3B8;
+  font-size: 14px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: rgba(13, 13, 17, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 100;
+  padding: 0 32px;
+}
+
+.topbar-content {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.topbar-logo {
+  text-decoration: none;
+  color: #feecbc;
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  left: 32px;
+}
+
+.footer {
+  width: 100%;
+  padding: 48px 0 24px;
+  background: #0d0d11;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 200px 200px;
+  justify-content: space-between;
+  padding: 0 32px;
+  gap: 32px;
+}
+
+.footer-section h4 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+}
+
+.footer-section p {
+  color: #94A3B8;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer-section a {
+  color: #94A3B8;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.footer-section a:hover {
+  color: #ffffff;
+}
+
+.footer-section a.disabled {
+  color: rgba(148, 163, 184, 0.5);
+  cursor: not-allowed;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 24px 32px 0;
+  color: #94A3B8;
+  font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 48px;
+}
+
+@media (max-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+  
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 120px 16px 32px;
+  }
+
+  .logo-text {
+    font-size: 42px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project {
+    padding: 16px;
+  }
+
+  .project-info h2 {
+    font-size: 20px;
+  }
+
+  .topbar {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  .topbar-logo {
+    font-size: 20px;
+    left: 16px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 0 24px;
+  }
+
+  .footer {
+    padding: 32px 0 16px;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-bottom {
+    margin-top: 32px;
+    padding: 16px;
+  }
+
+  .telegram-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+  
+  .telegram-button i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .content {
+    padding: 100px 12px 24px;
+  }
+
+  .logo-text {
+    font-size: 32px;
+  }
+
+  .logo svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .project-content {
+    gap: 12px;
+  }
+
+  .project-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .project-info h2 {
+    font-size: 18px;
+  }
+
+  .project-info p {
+    font-size: 13px;
+  }
+
+  .topbar {
+    padding: 0 12px;
+    height: 48px;
+  }
+
+  .topbar-logo {
+    font-size: 18px;
+    left: 12px;
+  }
+
+  .footer-content {
+    padding: 0 16px;
+  }
+
+  .footer-section h4 {
+    font-size: 16px;
+  }
+
+  .footer-section p,
+  .footer-section a {
+    font-size: 13px;
+  }
+
+  .telegram-button {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+  
+  .telegram-button i {
+    font-size: 16px;
+  }
+}
+
+.telegram-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #27A7E7 0%, #1D93CF 100%);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  font-family: 'Unbounded', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(39, 167, 231, 0.2);
+}
+
+.telegram-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(39, 167, 231, 0.3);
+  background: linear-gradient(135deg, #2FB3F3 0%, #2099D5 100%);
+}
+
+.telegram-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(39, 167, 231, 0.2);
+}
+
+.telegram-button i {
+  font-size: 20px;
+}
+
+.telegram-button span {
+  margin-left: 4px;
+} 

@@ -1,0 +1,15 @@
+{
+  "heads": [
+    { "id": 1, "name": "smu_ums", "url": "/images/heads/smu_ums.png" },
+    { "id": 2, "name": "Superslime87246", "url": "/images/heads/Superslime87246.png" },
+    { "id": 3, "name": "Kekxss", "url": "/images/heads/Kekxss.png" },
+    { "id": 4, "name": "Vchugaev", "url": "/images/heads/Vchugaev.png" },
+    { "id": 9, "name": "Ken_Flish", "url": "/images/heads/Ken_Flish.png" },
+    { "id": 14, "name": "Pavelkoro", "url": "/images/heads/Pavelkoro.png" },
+    { "id": 15, "name": "br33zee", "url": "/images/heads/br33zee.png" },
+    { "id": 17, "name": "Reotrum", "url": "/images/heads/Reotrum.png" },
+    { "id": 19, "name": "da1loks", "url": "/images/heads/da1loks.png" },
+    { "id": 20, "name": "WaterFlane", "url": "/images/heads/WaterFlane.png" },
+    { "id": 21, "name": "Drakon7005", "url": "/images/heads/Drakon7005.png" }
+  ]
+} 
