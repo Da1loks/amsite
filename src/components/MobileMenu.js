@@ -29,7 +29,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </div>
 
         <div className="mobile-nav-group">
-          <a href="https://t.me/your-channel" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">
+          <a href="https://t.me/rassvetamethyst" className="mobile-nav-link" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-telegram"></i>
             Telegram канал
           </a>
