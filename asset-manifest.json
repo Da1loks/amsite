@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/amethystsite/static/css/main.4fe2b21f.css",
-    "main.js": "/amethystsite/static/js/main.70a77470.js",
-    "static/js/488.ff2b84df.chunk.js": "/amethystsite/static/js/488.ff2b84df.chunk.js",
-    "index.html": "/amethystsite/index.html",
-    "main.4fe2b21f.css.map": "/amethystsite/static/css/main.4fe2b21f.css.map",
-    "main.70a77470.js.map": "/amethystsite/static/js/main.70a77470.js.map",
-    "488.ff2b84df.chunk.js.map": "/amethystsite/static/js/488.ff2b84df.chunk.js.map"
+    "main.css": "/static/css/main.e00cb190.css",
+    "main.js": "/static/js/main.d695cd60.js",
+    "static/js/488.ff2b84df.chunk.js": "/static/js/488.ff2b84df.chunk.js",
+    "index.html": "/index.html",
+    "main.e00cb190.css.map": "/static/css/main.e00cb190.css.map",
+    "main.d695cd60.js.map": "/static/js/main.d695cd60.js.map",
+    "488.ff2b84df.chunk.js.map": "/static/js/488.ff2b84df.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fe2b21f.css",
-    "static/js/main.70a77470.js"
+    "static/css/main.e00cb190.css",
+    "static/js/main.d695cd60.js"
   ]
 }
